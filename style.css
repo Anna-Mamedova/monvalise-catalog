@@ -149,8 +149,15 @@ header .navbar-expand-lg,
     padding: 0;
 }
 
-header .navbar-toggler {
-    margin-right: 16px;
+header .navbar-toggler,
+.filters .navbar-toggler {
+    border: none;
+    background: none;
+}
+
+.navbar-toggler:focus,
+.filters .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .nav-link{
@@ -169,11 +176,6 @@ header nav .active,
     border-bottom: 2px solid black;
 }
 
-.hamburger-menu {
-    border: none;
-    background: none;
-    margin: 15px 0;
-}
 
 hr {
     margin: 0;
@@ -205,13 +207,6 @@ hr {
     margin-bottom: 32px;
 }
 
-.catalog h3 {
-    font-size: 22px;
-    line-height: 33px;
-    font-weight: 400;
-    color: #5C5F60;
-    margin: 0;
-}
 
 .catalog .sorting p {
     color: #5C5F60;
@@ -242,14 +237,21 @@ hr {
     background: var(--secondary-color);
 }
 
-.filters {
+.accordion-item {
     min-width: 315px;
-    /* margin-right: 24px; */
-    margin-top: 25px;
 }
 
 .offcanvas-body .filters {
     width: 100%;
+}
+
+.filters h3 {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #5C5F60;
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .filters button {
@@ -264,7 +266,7 @@ hr {
     margin-bottom: 2px;
 }
 
-.filters .collapse {
+.filters .accordion-item .collapse {
     border: 1px solid var(--secondary-color);
     margin-bottom: 6px;
 }
@@ -633,7 +635,28 @@ footer .copyright-symbol {
 
     ul {
         margin-left: 0;
-    }    
+    }  
+
+    .filters .navbar-toggler {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .filters h3 {
+        margin-right: 25px;
+    }
+    
+    .filters .navbar-button {
+        position: absolute;
+        top: 440px
+    }
+    
+    .filters .navbar-collapse {
+        position: absolute;
+        top: 495px;
+        background: white;
+        z-index: 1050;
+    }
 
     footer p, 
     footer a,
@@ -649,5 +672,25 @@ footer .copyright-symbol {
 
     footer div.col-lg-3 {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .filters h3 {
+        display: none;
+    }
+    
+    .filters .navbar-button {
+        position: absolute;
+        top: 490px;
+        margin-left: 15px;
+    }
+    
+    .filters .navbar-collapse {
+        position: absolute;
+        top: 545px;
+        background: white;
+        z-index: 1050;
     }
 }
