@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/stylesheet.css" type = "text/css">
+    <title>Monvalise online clothing store</title>
+</head>
+<body>
+    <header >
+        <div class="price-banner text-center"><span><img src="image/👍.svg" height="22" alt="👍"><img src="image/heade-dress-icon.svg" width="24"></span>Брендовий верхній одяг від 899 грн</div>
+        <div class="logo-sm d-block d-sm-none">
+            <a href="/">
+                <img src="image/logo.svg" alt="logo" height="24">
+            </a>
+        </div>
+        <section class="search-lg text-center d-xxl-none d-xxl-block">
+            <form class="d-flex">
+                <input class="search" type="text" placeholder="Знайти речі або бренди" aria-label="Search">
+                <input class="btn btn-dark" type="submit" value="Додати товар">
+            </form>
+        </section>
+        <section class="search-section d-none d-sm-block">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="/">
+                        <img src="image/logo.svg" alt="logo" height="24">
+                    </a>
+                </div>
+                <form class="d-none d-xxl-block">
+                    <input class="search" type="text" placeholder="Знайти речі або бренди" aria-label="Search">
+                    <input class="btn btn-dark" type="submit" value="Додати товар">
+                </form>
+                <div class="info-panel d-flex align-items-center">
+                    <div class="dropdown-lenguage">
+                        Укр
+                        <a href="/"><img src="image/dropdown-icon.svg" alt="dropdown"></a> 
+                    </div>
+                    <div class="like-counter">
+                        <a href="/">
+                            <img src="image/header-heart-icon.svg" alt="heart icon">
+                        </a>
+                        <span class="header-badge">8</span>
+                    </div>
+                    <div class="mail-counter">
+                        <a href="/">
+                            <img src="image/header-mail-icon.svg" alt="mail icon">
+                        </a>
+                        <span class="header-badge-mail">3</span>
+                    </div>
+                    <div class="basket-counter">
+                        <a href="/">
+                            <img src="image/header-basket-icon.svg" alt="basket icon">
+                        </a>
+                        <span class="header-badge">3</span>
+                    </div>
+                    <div class="acount-avatar">
+                        <img src="image/avatar.svg" alt="avatar">
+                        <a href="/"><img src="image/dropdown-avatar-icon.svg" alt="dropdown"></a> 
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="info-panel-sm d-block d-sm-none">
+            <div class="d-flex align-items-center justify-content-around">
+                <div class="lenguage">
+                    Укр
+                    <a href="/"><img src="image/dropdown-icon.svg" alt="dropdown"></a> 
+                </div>
+                <div >
+                    <a href="/">
+                        <img src="image/header-heart-icon.svg" alt="heart icon">
+                    </a>                        <span class="header-badge">8</span>
+                </div>
+                <div >
+                    <a href="/">
+                        <img src="image/header-mail-icon.svg" alt="mail icon">
+                    </a>
+                    <span class="header-badge-mail">3</span>
+                </div>
+                <div >
+                    <a href="/">                            <img src="image/header-basket-icon.svg" alt="basket icon">
+                        </a>
+                    <span class="header-badge">3</span>
+                </div>
+                <div >
+                    <img src="image/avatar.svg" alt="avatar">
+                    <a href="/"><img src="image/dropdown-avatar-icon.svg" alt="dropdown"></a>                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-none d-lg-block">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                    <a class="nav-link" href="/">Головна</a>
+                    <a class="nav-link active" aria-current="page" href="/">каталог</a>
+                    <a class="nav-link" href="/">жінкам</a>
+                    <a class="nav-link" href="/">чоловікам</a>
+                    <a class="nav-link" href="/">дитячі речі</a>
+                    <a class="nav-link" href="/">аукціон</a>
+                    <a class="nav-link" href="/">бренди</a>
+                    <a class="nav-link" href="/">акції</a>
+                    <a class="nav-link" href="/">аутентифікація</a>
+                    <a class="nav-link" href="/">блог</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </section>
+        <section class="d-flex d-block d-lg-none">
+            <div>
+                <button class="hamburger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img src="/image/hamburger-menu.png" alt="hamburger menu">
+                </button> 
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header d-block text-end pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a class="nav-link" href="/">Головна</a>
+                        <a class="nav-link active" aria-current="page" href="/">каталог</a>
+                        <a class="nav-link" href="/">жінкам</a>
+                        <a class="nav-link" href="/">чоловікам</a>
+                        <a class="nav-link" href="/">дитячі речі</a>
+                        <a class="nav-link" href="/">аукціон</a>
+                        <a class="nav-link" href="/">бренди</a>
+                        <a class="nav-link" href="/">акції</a>
+                        <a class="nav-link" href="/">аутентифікація</a>
+                        <a class="nav-link" href="/">блог</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="hamburger-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1" aria-controls="offcanvasExample1">
+                    <img src="/image/filter-icon.png" alt="filter icon">
+                </button> 
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel1">
+                    <div class="offcanvas-header d-block text-end pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="filters">
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-heading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                      Категорії
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1">
+                                    <div class="accordion-body"></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                      Ціна
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2">
+                                    <div class="accordion-body">
+                                        <div class="range-container">
+                                            <div class="sliders-control">
+                                                <input id="fromSlider" type="range" value="0" min="0" max="10000"/>
+                                                <input id="toSlider" type="range" value="3000" min="0" max="10000"/>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="min-price">
+                                                <label for="min">Від</label> <br/>
+                                                <input title="number" value="980" id="min"/>
+                                            </div>
+                                            <div class="max-price">
+                                                <label for="max">До</label> <br/>
+                                                <input title="number" value="20465" id="max"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                      Продавець
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3">
+                                    <div class="accordion-body"></div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading4">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                        Бренд
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading5">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                        Стать
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5">
+                                      <div class="accordion-body">
+                                          <div class="checkbox-woman d-flex justify-content-between">
+                                              <div>
+                                                    <input type="checkbox" id="woman" class="custom-checkbox" />
+                                                    <label for="woman">Жінкам</label>
+                                              </div>
+                                              <div class="amount">
+                                                  (64)
+                                              </div>
+                                          </div>
+                                          <div class="checkbox-man d-flex justify-content-between">
+                                              <div>
+                                                    <input type="checkbox" id="man" class="custom-checkbox" />
+                                                    <label for="man">Чоловікам</label>
+                                              </div>
+                                              <div class="amount">
+                                                  (16)
+                                              </div>
+                                          </div>
+                                          <div class="checkbox-unisex d-flex justify-content-between">
+                                              <div>
+                                                <input type="checkbox" id="unisex" class="custom-checkbox" />
+                                                <label for="unisex">Унісекс</label>
+                                              </div>
+                                              <div class="amount">
+                                                  (24)
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading6">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                        Розмір
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading7">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                        Колір
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading8">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                        Матеріал
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading9">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                                        Сезон
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading10">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                                        Стиль
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10">
+                                      <div class="accordion-body"></div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+    </header>
+    <section>
+        <div class="path d-flex align-items-center">
+            <p>Головна</p>
+            <p class="slash">/</p>
+            <p class="chapter">Каталог</p>
+        </div>
+    </section>
+    <section class="catalog">
+        <h1>Каталог одягу</h1>
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="d-none d-lg-block">Фільтри</h3>
+            <div class="d-flex sorting align-items-center">
+                <p>Созтувати за:</p>
+                <p class="sortint-by">За замовчуванням</p>
+                <a href="/"><img src="image/dropdown-sort-icon.svg" alt="dropdown"></a>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="filters d-none d-lg-block">
+                <div class="accordion accordion-flush">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-heading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                          Категорії
+                        </button>
+                      </h2>
+                      <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1">
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                          Ціна
+                        </button>
+                      </h2>
+                      <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2">
+                        <div class="accordion-body">
+                            <div class="range-container">
+                                <div class="sliders-control">
+                                    <input id="fromSlider" type="range" value="0" min="0" max="10000"/>
+                                    <input id="toSlider" type="range" value="3000" min="0" max="10000"/>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="min-price">
+                                    <label for="min">Від</label> <br/>
+                                    <input title="number" value="980" id="min"/>
+                                </div>
+                                <div class="max-price">
+                                    <label for="max">До</label> <br/>
+                                    <input title="number" value="20465" id="max"/>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                          Продавець
+                        </button>
+                      </h2>
+                      <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3">
+                        <div class="accordion-body"></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                            Бренд
+                          </button>
+                        </h2>
+                        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading5">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                            Стать
+                          </button>
+                        </h2>
+                        <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5">
+                          <div class="accordion-body">
+                              <div class="checkbox-woman d-flex justify-content-between">
+                                  <div>
+                                        <input type="checkbox" id="woman" class="custom-checkbox" />
+                                        <label for="woman">Жінкам</label>
+                                  </div>
+                                  <div class="amount">
+                                      (64)
+                                  </div>
+                              </div>
+                              <div class="checkbox-man d-flex justify-content-between">
+                                  <div>
+                                        <input type="checkbox" id="man" class="custom-checkbox" />
+                                        <label for="man">Чоловікам</label>
+                                  </div>
+                                  <div class="amount">
+                                      (16)
+                                  </div>
+                              </div>
+                              <div class="checkbox-unisex d-flex justify-content-between">
+                                  <div>
+                                    <input type="checkbox" id="unisex" class="custom-checkbox" />
+                                    <label for="unisex">Унісекс</label>
+                                  </div>
+                                  <div class="amount">
+                                      (24)
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading6">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                            Розмір
+                          </button>
+                        </h2>
+                        <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading7">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                            Колір
+                          </button>
+                        </h2>
+                        <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading8">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                            Матеріал
+                          </button>
+                        </h2>
+                        <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading9">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+                            Сезон
+                          </button>
+                        </h2>
+                        <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading10">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+                            Стиль
+                          </button>
+                        </h2>
+                        <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10">
+                          <div class="accordion-body"></div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="products">
+                
+            </div>
+        </div>
+    </section>
+    <section class="page-pagination">
+        <nav aria-label="navigation">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li><a class="previos-page" href="/">Попередня</a></li>
+              <li><a href="/">1</a></li>
+              <li><a class="active" href="/">2</a></li>
+              <li><a href="/">3</a></li>
+              <li><a href="/">4</a></li>
+              <li><a href="/">5</a></li>
+              <li><a href="/">6</a></li>
+              <li><a href="/">7</a></li>
+              <li><a href="/">8</a></li>
+              <li><a class="next-page" href="/">Наступна</a></li>
+            </ul>
+          </nav>
+    </section>
+    <footer>
+        <section>
+            <div class="row info-section">
+                <div class="col-lg-3">
+                    <p>Довідка для покупців</p>
+                    <p><a href="/">Отримати підтримку</a></p>
+                    <p><a href="/">Як купувати</a></p>
+                    <p><a href="/">Як залишити корисний відгук</a></p>
+                    <p><a href="/">Програма Захисту Покупців</a></p>
+                    <p><a href="/">Рекомендації з безпечних покупок</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p>Довідка для продавців</p>
+                    <p><a href="/">Як почати продавати</a></p>
+                    <p><a href="/">Тарифи</a></p>
+                    <p><a href="/">Угода користувача</a></p>
+                    <p><a href="/">Політика конфіденційності</a></p>
+                    <p><a href="/">Правила користування порталом</a></p>
+                    <p><a href="/">Бонусна програма</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <p>Про нас</p></p>
+                    <p><a href="/">Довідка та FAQ</a></p>
+                    <p><a href="/">Захист легальності контенту</a></p>
+                    <p><a href="/">Адміністрація</a></p>
+                    <p><a href="/">Вакансії</a></p>
+                </div>
+                <div class="col-lg-3 google">
+                    <p>Мобільний додаток</p>
+                    <img src="/image/google-play.svg" alt="google icon">
+                </div>
+            </div>
+            <div class="">©</div>
+        </section>
+    </footer>
+    <script src="range.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
