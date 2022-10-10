@@ -610,6 +610,12 @@ footer img {
     cursor: pointer;
 }
 
+footer .copyright-symbol {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 38px 0;
+}
+
 @media (max-width: 1400px){
     section {
         margin: 0 10px;
