@@ -314,6 +314,11 @@ hr {
     z-index: 1;
 }
 
+#fromSlider1 {
+    background: none;
+    z-index: 2;
+}
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     pointer-events: all;
@@ -496,14 +501,7 @@ input[type="range"] {
     color: #747778;
     margin: 0;
     font-weight: 400;
-}
-
-.line-through {
-    position: absolute;
-    top: 421px;
-    width: 36px;
-    color: #747778;
-    opacity: 1;
+    text-decoration: line-through;
 }
 
 .price {

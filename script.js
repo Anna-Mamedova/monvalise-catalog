@@ -114,7 +114,6 @@ for (;i < products.length; i++) {
             <div class="d-flex justify-content-between">
               <div>
                  <p class="old-price">${products[i].old_price}</p>
-                  <hr class="line-through"/>
                   <p class="price">${products[i].price}</p>
               </div>
               <div class="m-0">
@@ -145,7 +144,6 @@ for (;i < products.length; i++) {
             <div class="d-flex justify-content-between">
               <div>
                 <p class="old-price">${products[i].old_price}</p>
-                <hr class="line-through"/>
                 <p class="price">${products[i].price}</p>
               </div>
               <div class="m-0">
