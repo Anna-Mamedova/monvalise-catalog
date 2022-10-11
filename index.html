@@ -23,9 +23,15 @@
                     <input class="btn btn-dark" type="submit" value="Додати товар">
                 </form>
                 <div class="info-panel align-items-center">
-                    <div class="dropdown-lenguage">
-                        Укр
-                        <a href="/"><img src="image/dropdown-icon.svg" alt="dropdown"></a>
+                    <div class="dropdown-lenguage dropdown-center">
+                        <a href="/" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Укр
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/">Eng</a></li>
+                          <li><a class="dropdown-item" href="/">Deu</a></li>
+                          <li><a class="dropdown-item" href="/">Pol</a></li>
+                        </ul>
                     </div>
                     <div class="like-counter">
                         <a href="/">
@@ -259,17 +265,17 @@
         </section>
         <section class="page-pagination">
             <nav aria-label="navigation">
-                <ul class="d-flex justify-content-center align-items-center">
-                  <li><a class="previos-page" href="/">Попередня</a></li>
-                  <li><a href="/">1</a></li>
-                  <li><a class="active" href="/">2</a></li>
-                  <li><a href="/">3</a></li>
-                  <li><a href="/">4</a></li>
-                  <li><a href="/">5</a></li>
-                  <li><a href="/">6</a></li>
-                  <li><a href="/">7</a></li>
-                  <li><a href="/">8</a></li>
-                  <li><a class="next-page" href="/">Наступна</a></li>
+                <ul class="row justify-content-center align-items-center">
+                  <li class="col-2 previos-page mx-0"><a href="/">Попередня</a></li>
+                  <li class="col-1"><a href="/" class="rounded-circle">1</a></li>
+                  <li class="col-1 active"><a href="/">2</a></li>
+                  <li class="col-1"><a href="/">3</a></li>
+                  <li class="col-1"><a href="/">4</a></li>
+                  <li class="col-1"><a href="/">5</a></li>
+                  <li class="col-1"><a href="/">6</a></li>
+                  <li class="col-1"><a href="/">7</a></li>
+                  <li class="col-1"><a href="/">8</a></li>
+                  <li class="col-2 next-page"><a href="/">Наступна</a></li>
                 </ul>
               </nav>
         </section>
@@ -305,7 +311,11 @@
                     <img src="/image/google-play.svg" alt="google icon">
                 </div>
             </div>
-            <div class="copyright-symbol">© 2022 Monvalise</div>
+            <div class="copyright-symbol">
+              <p>
+                  © 2022 Monvalise
+              </p>
+            </div>
         </section>
     </footer>
     <script src="range.js"></script>
