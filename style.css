@@ -18,22 +18,6 @@ header a {
     text-decoration: none;
 }
 
-header .search-lg{
- padding-top: 23px;
-}
-
-header .search-lg input.search {
-    background: url(image/search-icon.svg) no-repeat center left;
-    background-position: 18px;
-    width: 100%;
-    font-size: 12px;
-    line-height: 18px;
-    padding: 10px 0;
-    padding-left: 52px;
-    border-radius: 4px;
-    border: 2px solid var(--secondary-color);
-}
-
 header .search-section form{
     margin-right: 24px;
     max-width: 100%;
@@ -42,6 +26,7 @@ header .search-section form{
 header .search-section {
     border-bottom: 1px solid var(--secondary-color);
     padding: 23px 0;
+    display: flex;
 }
 
 header .search-section input.search {
@@ -78,12 +63,7 @@ header .logo{
     margin-right: 75px;
 }
 
-header .logo-sm {
-    margin-top: 23px;
-    text-align: center;
-}
-
-header .btn {
+header form .btn {
     font-size: 12px;
     line-height: 18px;
     padding: 10px 20px;
@@ -91,7 +71,7 @@ header .btn {
 }
 
 header .like-counter,
-.mail-counter {
+header .mail-counter {
     margin-right: 7px;
 }
 
@@ -138,10 +118,8 @@ header .header-badge-mail {
     right: 10px;
 }
 
-header .info-panel-sm {
-    display: none;
-    padding: 23px 0;
-    border-bottom: 1px solid var(--secondary-color);
+header .info-panel {
+    display: flex;
 }
 
 header .navbar-expand-lg,
@@ -620,6 +598,31 @@ footer .copyright-symbol {
     section {
         margin: 0 10px;
     }
+
+    header .search-section {
+        justify-content: space-between;
+    }
+
+    header .search-section {
+        margin-top: 70px;
+    }
+
+    header .search-section form{
+       position:absolute;
+       top: 70px;
+       left: 2.5%;
+       display: flex;
+       margin-right: 0;
+       max-width: 95%;
+    }
+    
+    header .search-section input.search {
+        width: 1320px;
+    }
+
+    header .logo{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 991px){
@@ -680,6 +683,20 @@ footer .copyright-symbol {
     .filters h3 {
         display: none;
     }
+
+    header .search-section {
+        margin-top: 120px;
+    }
+
+    header .logo{
+        position: absolute;
+        top: 70px;
+        left: 35%;
+    }
+
+    header .search-section form{
+        top: 120px;
+    }
     
     .filters .navbar-button {
         position: absolute;
@@ -692,5 +709,20 @@ footer .copyright-symbol {
         top: 545px;
         background: white;
         z-index: 1050;
+    }
+
+    header .search-section {
+        display: block;
+    }
+
+    header .info-panel {
+        justify-content: space-around;
+    }
+
+    header .like-counter,
+    header .mail-counter,
+    header .basket-counter,
+    header .dropdown-lenguage {
+    margin: 0;
     }
 }
