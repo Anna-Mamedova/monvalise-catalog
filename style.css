@@ -550,6 +550,8 @@ section.page-pagination {
     transition: all 200ms ease-in-out;
     color: #5C5F60;
     text-decoration: none;
+    position: relative;
+    top: 1px;
 }
 
 .page-pagination .row {
@@ -566,6 +568,8 @@ section.page-pagination {
     font-weight: 500;
 }
 
+
+
 .page-pagination .col-2 {
     margin-left: 8px;
     padding: 0 13px;
@@ -577,8 +581,13 @@ section.page-pagination {
 }
 
 
-.page-pagination .col-1:hover {
+.page-pagination .col-1:hover,
+.page-pagination .col-2:hover {
     border-color: var(--primary-font-color);
+}
+
+.page-pagination .col-1:hover a,
+.page-pagination .col-2:hover a {
     color: var(--primary-font-color);
 }
 
