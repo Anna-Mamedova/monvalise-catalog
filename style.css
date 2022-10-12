@@ -72,7 +72,7 @@ header form .btn {
 
 header .like-counter,
 header .mail-counter {
-    margin-right: 7px;
+    margin-right: 5px;
 }
 
 header .search {
@@ -89,7 +89,7 @@ header .dropdown-lenguage a {
     color: var(--primary-font-color);
 }
 
-.dropdown-toggle::after {
+.dropdown-lenguage .dropdown-toggle::after {
     display: inline-block;
     margin-left: 2px;
     vertical-align: 1px;
@@ -100,43 +100,51 @@ header .dropdown-lenguage a {
     border-left: none;
 }
 
+.acount-avatar .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: 1px;
+    content: url(image/dropdown-avatar-icon.svg);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
 header .dropdown-menu {
     --bs-dropdown-min-width: none;
     font-size: 12px;
-
 }
 
 header .basket-counter {
-    margin-right: 14px;
+    margin-right: 15px;
 }
 
 header .header-badge {
     font-size: 10px;
     background: var(--secondary-color);
-    position: relative;
     width: 14px;
     height: 14px;
     border-radius: 13px;
     border: 2.4px solid white;
     padding: 1px 4px;
     position: relative;
-    bottom: 10px;
-    right: 10px;
+    bottom: 12px;
+    right: 13px;
 }
 
 header .header-badge-mail {
     font-size: 10px;
     background: #FF5449;
     color: white;
-    position: relative;
     width: 14px;
     height: 14px;
     border-radius: 13px;
     border: 2.4px solid white;
     padding: 1px 4px;
     position: relative;
-    bottom: 10px;
-    right: 10px;
+    bottom: 12px;
+    right: 13px;
 }
 
 header .info-panel {
@@ -268,7 +276,7 @@ header hr {
 
 .filters .accordion-button.collapsed::after,
 .filters .accordion-button:not(.collapsed)::after {
-    background-image: url(/image/dropdown-filter-icon.svg);
+    background-image: url(/image/dropdown-filter-icon.svg) !important;
     background-size: 160%;
     height: 10px;
     width: 17px;
@@ -493,6 +501,10 @@ header hr {
     margin: 0;
     font-weight: 400;
     text-decoration: line-through;
+}
+
+.products .old-price span {
+    color: transparent;
 }
 
 .products .price {

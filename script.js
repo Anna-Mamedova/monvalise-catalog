@@ -104,61 +104,61 @@ for (;i < products.length; i++) {
     productsHTML = productsHTML + 
       `
       <div class="col-4">
-        <div class="card">
-          <img src="${products[i].foto}" class="product-foto"/>
-          <img src="/image/like-button.svg" class="like-button" />
-          <div class="card-body-top">
-            <img src="${products[i].top}" class="top-icon"/>
-            <p class="product-brand">${products[i].brand}</p>
-            <p class="product-description">${products[i].description}</p>
-            <div class="d-flex justify-content-between">
-              <div>
-                 <p class="old-price">${products[i].old_price}</p>
-                  <p class="price">${products[i].price}</p>
+          <div class="card">
+            <img src="${products[i].foto}" class="product-foto"/>
+            <img src="/image/like-button.svg" class="like-button" />
+              <div class="card-body-top">
+                  <img src="${products[i].top}" class="top-icon"/>
+                  <p class="product-brand">${products[i].brand}</p>
+                  <p class="product-description">${products[i].description}</p>
+                  <div class="d-flex justify-content-between">
+                      <div>
+                          <p class="old-price">${products[i].old_price}<span>!</span></p>
+                          <p class="price">${products[i].price}</p>
+                      </div>
+                      <div class="m-0">
+                          <div class="d-flex justify-content-end align-items-center">
+                              <img src="/image/map-pointer.svg" />
+                              <p class="city">${products[i].city}</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <img src="${products[i].seller_icon}" class="seller-icon"/>
+                              <p class="seller">${products[i].seller}</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="m-0">
-                <div class="d-flex justify-content-end align-items-center">
-                  <img src="/image/map-pointer.svg" />
-                  <p class="city">${products[i].city}</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="${products[i].seller_icon}" class="seller-icon"/>
-                  <p class="seller">${products[i].seller}</p>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
       `
     } else {
       productsHTML = productsHTML + 
       `
       <div class="col-4">
-        <div class="card">
-          <img src="${products[i].foto}" class="product-foto"/>
-          <img src="/image/like-button.svg" class="like-button" />
-          <div class="card-body">
-            <p class="product-brand">${products[i].brand}</p>
-            <p class="product-description">${products[i].description}</p>
-            <div class="d-flex justify-content-between">
-              <div>
-                <p class="old-price">${products[i].old_price}</p>
-                <p class="price">${products[i].price}</p>
+          <div class="card">
+              <img src="${products[i].foto}" class="product-foto"/>
+              <img src="/image/like-button.svg" class="like-button" />
+              <div class="card-body">
+                  <p class="product-brand">${products[i].brand}</p>
+                  <p class="product-description">${products[i].description}</p>
+                  <div class="d-flex justify-content-between">
+                      <div>
+                          <p class="old-price">${products[i].old_price}<span>!</span></p>
+                          <p class="price">${products[i].price}</p>
+                      </div>
+                      <div class="m-0">
+                          <div class="d-flex justify-content-end align-items-center">
+                              <img src="/image/map-pointer.svg" />
+                              <p class="city">${products[i].city}</p>
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <img src="${products[i].seller_icon}" class="seller-icon"/>
+                              <p class="seller">${products[i].seller}</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="m-0">
-                <div class="d-flex justify-content-end align-items-center">
-                  <img src="/image/map-pointer.svg" />
-                  <p class="city">${products[i].city}</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="${products[i].seller_icon}" class="seller-icon"/>
-                  <p class="seller">${products[i].seller}</p>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
       `
     }
