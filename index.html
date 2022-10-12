@@ -101,7 +101,7 @@
                 <div class="filters">
                     <div class="navbar-expand-lg">
                         <div class="navbar-button d-flex align-items-center">
-                            <h3 class="navbar-brand">Фільтри</h3>
+                            <h3>Фільтри</h3>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup1" aria-controls="navbarNavAltMarkup1" aria-expanded="false" aria-label="Toggle navigation1">
                                 <span><img src="image/filter-icon.png"></span>
                             </button>
@@ -261,7 +261,14 @@
                     <div class="d-flex sorting align-items-center justify-content-end">
                         <p>Созтувати за:</p>
                         <p class="sortint-by">За замовчуванням</p>
-                        <a href="/"><img src="image/dropdown-sort-icon.svg" alt="dropdown"></a>
+                        <a href="/" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="image/dropdown-sort-icon.svg" alt="dropdown">
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/">За зростанням ціни</a></li>
+                          <li><a class="dropdown-item" href="/">За спаданням ціни</a></li>
+                          <li><a class="dropdown-item" href="/">За абеткою (А-Я)</a></li>
+                      </ul>
                     </div>
                     <div class="products">
                     </div>
