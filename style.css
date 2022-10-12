@@ -542,16 +542,17 @@ section.page-pagination {
 
 .page-pagination li{
     list-style: none;
+    cursor: pointer;
 }
 
 .page-pagination a {
     font-size: 10px;
     line-height: 15px;
-    transition: all 200ms ease-in-out;
     color: #5C5F60;
     text-decoration: none;
     position: relative;
     top: 1px;
+    transition: all 200ms ease-in-out;
 }
 
 .page-pagination .row {
@@ -566,6 +567,7 @@ section.page-pagination {
     border-radius: 50px;
     text-align:center;
     font-weight: 500;
+    transition: all 200ms ease-in-out;
 }
 
 
@@ -578,6 +580,7 @@ section.page-pagination {
     border: 2px solid #E0E3E3;
     border-radius: 50px;
     font-weight: 400 !important;
+    transition: all 200ms ease-in-out;
 }
 
 
@@ -609,16 +612,22 @@ footer {
 
 footer .info-section {
     padding: 72px 0;
-}
-
-footer .info-section p, 
-footer .info-section a,
-footer .info-section a:hover{
     font-size: 14px;
     line-height: 21px;
+}
+
+footer .info-section p {
+    margin-bottom: 12px;
+}
+
+footer .info-section a {
     text-decoration: none;
     color: var(--primary-font-color);
     margin-bottom: 12px;
+}
+
+footer .info-section a:hover {
+    text-decoration: underline;
 }
 
 footer .row {
